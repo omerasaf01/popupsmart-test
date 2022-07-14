@@ -3,6 +3,7 @@ import SettingsMenu from "./SettingsMenu";
 
 class App extends Component {
   render() {
+    
     return (
       <div>
         <SettingsMenu />

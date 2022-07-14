@@ -38,7 +38,7 @@
 }
 
 #headline {
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	position: absolute;
 	width: 350px;
 	height: 48px;
@@ -124,16 +124,22 @@ body {
 	right: 18.7%;
 	top: 26.2%;
 	bottom: 23.52%;
-
 	background: #FFFFFF;
 }
 
+
+/*
+	* 86px top,
+	* 720x543px card
+*/
+
 #cardTitle {
-	position: center;
-	width: 371px;
+	text-align: center;
+	box-sizing: content-box;
 	height: 77px;
-	left: 1015px;
+	left: 50%;
 	top: 369px;
+
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 500;
@@ -142,49 +148,15 @@ body {
 	color: #000000;
 }
 
-/* #cardDescription {
-	position: absolute;
-	width: 312px;
-	height: 48px;
-	left: 1044px;
-	top: 446px;
-
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 24px;
-	text-align: center;
-
-	color: #000000;
+#cardDescription {
+	padding-top: 12%;
 }
 
-#name {
-	position: absolute;
-	width: 350px;
-	height: 41px;
-	left: 1026px;
-	top: 525px;
-
-	background: #EDEDED;
+#quit {
+	margin-left: 95%;
+	margin-top: 1%;
+	border-radius: 50%;
+	border: none;
+	background-color: #639005;
+	margin-bottom: 2%;
 }
-
-#email {
-	position: absolute;
-	width: 350px;
-	height: 41px;
-	left: 1026px;
-	top: 581px;
-
-	background: #EDEDED;
-}
-
-#fonts {
-	position: absolute;
-	width: 350px;
-	height: 41px;
-	left: 1026px;
-	top: 637px;
-
-	background: #EDEDED;
-} */
