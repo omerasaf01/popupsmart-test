@@ -158,5 +158,6 @@ body {
 	border-radius: 50%;
 	border: none;
 	background-color: #639005;
-	margin-bottom: 2%;
+	width: 19px;
+	height: 19px;
 }

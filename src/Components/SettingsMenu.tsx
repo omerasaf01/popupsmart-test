@@ -61,7 +61,11 @@ class SettingsMenu extends Component<any, any> {
 	componentDidMount() {
 		axios.get<IResponse>("https://apiv2.popupsmart.com/api/googlefont").then((item) => {
 			this.setState({ data: item.data });
-			console.log(this.state.data);
+			var newData = [];
+			this.state.data.map((item : any) => {
+				newData.push(item.family);
+			})
+			this.setState({data: newData});
 		});
 	}
 
@@ -135,20 +139,22 @@ class SettingsMenu extends Component<any, any> {
 						<div className="card">
 							<button id="quit">x</button>
 							<h2 id="cardTitle">{this.state.settings.Headline}</h2>
-							<p id="cardDescription">{this.state.settings.Description}</p>
-							<input type="text" onChange={e => this.nameChange(e)} name="Name" id="name" />
-							<input type="text" name="email" onChange={e => this.emailChange(e)} id="email" />
-							<select name="fonts" id="fonts">
-								{
-									this.state.data.map((item: any) => {
-										if (item.family !== "monospace") {
-											return <option>{item.family}</option>
-										}
-									})
-								}
-								{/* <option value="audi">Audi</option> */}
-							</select>
-							<button onClick={this.buttonClick} />
+							<p id="cardDescription">{this.state.settings.Descripiton}</p>
+							<div className="">
+								<input type="text" onChange={e => this.nameChange(e)} name="Name" id="name" />
+								<input type="text" name="email" onChange={e => this.emailChange(e)} id="email" />
+								<select name="fonts" id="fonts">
+									{
+										this.state.data.map((item: any) => {
+											if (item.family !== "monospace") {
+												return <option key={item.family}>{item.family}</option>
+											}
+										})
+							   	}
+									{/* <option value="audi">Audi</option> */}
+								</select>
+								<button onClick={this.buttonClick}>GET MY 30% OFF</button>
+							</div>
 						</div>
 					</div>
 				</div>
