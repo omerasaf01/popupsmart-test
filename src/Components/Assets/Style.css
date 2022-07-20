@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 .main {
     background-color: blue;
     display: block;
@@ -7,7 +9,6 @@
 
 #title {
 	position: absolute;
-	width: 191px;
 	height: 29px;
 	left: 65px;
 	top: 81px;
@@ -26,13 +27,11 @@
 	height: 19px;
 	left: 65px;
 	top: 143px;
-
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;
-
 	color: #000000;
 	margin-top: 10px;
 }
@@ -56,7 +55,6 @@
 	height: 103px;
 	left: 65px;
 	top: 285px;
-
 	border: 1px solid #D2DAE3;
 	border-radius: 8px;
 }
@@ -67,13 +65,11 @@
 	height: 19px;
 	left: 65px;
 	top: 256px;
-
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 19px;
-
 	color: #000000;
 }
 
@@ -83,7 +79,6 @@
 	height: 19px;
 	left: 65px;
 	top: 431px;
-
 	font-family: 'Inter';
 	font-weight: 500;
 	font-size: 16px;
@@ -92,13 +87,11 @@
 
 #succes {
 	box-sizing: border-box;
-
 	position: absolute;
 	width: 350px;
 	height: 48px;
 	left: 65px;
 	top: 460px;
-
 	border: 1px solid #D2DAE3;
 	border-radius: 8px;
 	margin-top: 10px;
@@ -110,7 +103,6 @@
     height: 1080px;
     left: 0px;
     top: 0px;
-
     background: white;
 }
 
@@ -120,36 +112,77 @@ body {
 
 .card {
 	position: absolute;
-	left: 43.8%;
+	left: 46.8%;
 	right: 18.7%;
-	top: 26.2%;
+	top: 15%;
 	bottom: 23.52%;
 	background: #FFFFFF;
+	list-style: none;
+	height: 80%;
+	text-align: center;
 }
 
+#background {
+	top: 7%;
+	position: absolute;
+	width: 60%;
+	height: 80%;
+	margin-left: 35%;
+	border: none !important;
+	background: url("./background.svg");
+	size: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	stroke: transparent;
+	stroke-width: 0px;
+}
 
-/*
-	* 86px top,
-	* 720x543px card
-*/
+#warn {
+	background-image: url("./Vector.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	stroke: transparent;
+	stroke-width: 0px;
+	size: 1%;
+}
 
-#cardTitle {
-	text-align: center;
-	box-sizing: content-box;
-	height: 77px;
-	left: 50%;
-	top: 369px;
+#warnM {
+	position: absolute;
+	width: 50%;
+	height: 1%;
+	left: 72px;
+	top: 83px;
 
 	font-family: 'Inter';
 	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+
+	/* identical to box height */
+
+	color: #EA0F0F;
+}
+
+
+#cardTitle {
+	font-family: 'Inter';
 	font-weight: 500;
 	font-size: 64px;
-	line-height: 77px;
 	color: #000000;
+	margin-bottom: 0.1%;
 }
 
 #cardDescription {
-	padding-top: 12%;
+	/*width: 65%;*/
+	size: 20px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
 }
 
 #quit {
@@ -158,6 +191,47 @@ body {
 	border-radius: 50%;
 	border: none;
 	background-color: #639005;
-	width: 19px;
-	height: 19px;
+	width: 4.3%;
+	height: 4%;
+	text-align: center;
+	color: white;
+	right: 2%;
+}
+
+#name {
+	margin-bottom: 3%;
+	width: 69%;
+	height: 41px;
+	background-color: #EDEDED;
+	border: none;
+}
+
+#email {
+	width: 69%;
+	height: 41px;
+	background-color: #EDEDED;
+	border: none;
+	margin-bottom: 3%;
+}
+
+#fonts {
+	width: 70%;
+	height: 41px;
+	background-color: #EDEDED;
+	border: none;
+	margin-bottom: 3%;
+}
+
+::placeholder {
+	color: black;
+	opacity: 1;
+	margin-left: 2%;
+}
+
+#submit {
+	width: 70%;
+	height: 41px;
+	background-color: #639105;
+	border: none;
+	color: white;
 }
